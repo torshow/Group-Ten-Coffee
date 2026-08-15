@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Shop from './components/Shop'
-import AdminPortal from './components/AdminPortal'
-import useCoffee from './hooks/useCoffee'
+import NavBar from './Components/NavBar.jsx'
+import Home from './Pages/Home'
+import Shop from './Pages/Shop.jsx'
+import AdminPortal from './Pages/AdminPortal.jsx'
+import useCoffee from './hooks/usecoffee.js'
 
 function App() {
   const { coffees, isLoading, error, addCoffee, updateCoffee } = useCoffee()

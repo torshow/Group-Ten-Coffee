@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import CoffeeForm from './CoffeeForm'
-import EditCoffeeForm from './EditCoffeeForm'
-import styles from './AdminPortal.module.css'
+import CoffeeForm from '../Components/CoffeeForm'
+import EditCoffeeForm from '../Components/EditCoffeeForm'
+
 
 function AdminPortal({ coffees, addCoffee, updateCoffee }) {
   const [editingId, setEditingId] = useState(null)

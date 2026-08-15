@@ -1,5 +1,3 @@
-import styles from './CoffeeCard.module.css'
-
 function coffeeCard({ coffee }) {
   return (
     <div className={styles.coffeecard}>

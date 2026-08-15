@@ -1,5 +1,4 @@
 import { useState, useId, useRef, useEffect } from 'react'
-import styles from './CoffeeForm.module.css'
 
 function CoffeeForm({ addCoffee }) {
   const [name, setName] = useState('')

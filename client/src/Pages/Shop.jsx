@@ -1,6 +1,5 @@
 import { useState } from "react";
 import CoffeeCard from "../Components/CoffeeCard";
-import styles from './Shop.module.css';
 import LocationFilter from "./LocationFilter";
 
 function Shop({ coffees, isLoading, error }) {
