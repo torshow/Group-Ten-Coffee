@@ -1,4 +1,5 @@
 import { useState, useId, useRef, useEffect } from 'react'
+import styles from './CoffeeForm.module.css'
 
 function CoffeeForm({ addCoffee }) {
   const [name, setName] = useState('')
@@ -35,7 +36,7 @@ function CoffeeForm({ addCoffee }) {
   }
 
   return (
-    <form className="coffee-form" onSubmit={handleSubmit}>
+    <form className="styles.coffeeform" onSubmit={handleSubmit}>
       <label htmlFor={`${formId}-name`}>Coffee Name</label>
       <input
         id={`${formId}-name`}
