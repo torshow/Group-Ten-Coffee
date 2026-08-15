@@ -9,4 +9,4 @@ function coffeeCard({ coffee }) {
   )
 }
 
-export default coffeeCard
+export default coffeeCard;
