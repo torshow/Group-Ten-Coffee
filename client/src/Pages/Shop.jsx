@@ -35,7 +35,7 @@ function Shop({ coffees, isLoading, error }) {
 
     return (
         <div className="shop">
-            <locationFilter
+            <LocationFilter
                 coffees={coffees}
                 searchText={searchText}
                 onSearchChange={handleSearchChange}
