@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import CoffeeCard from "../Components/CoffeeCard";
-
+import styles from './Shop.module.css'
 function Shop({ coffees }) {
     const [products, setProducts] = useState([]);
 
@@ -23,7 +23,7 @@ function Shop({ coffees }) {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <div className="coffee-list">
+            <div className="styles.coffeelist">
                 {filteredProducts.map((coffee) => (
                     <CoffeeCard key={coffee.id} coffee={coffee} />
                 ))}

@@ -1,16 +1,33 @@
-# React + Vite
+Group-Ten-Coffee
+A simple React e-commerce site for a coffee shop, built with Vite, React Router, and a json-server mock backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Component Tree
+App (holds coffees state via useCoffee hook)
+├── Navbar
+├── Home
+└── Shop (route: /shop)
+│   ├── LocationFilter (search input + origin checkboxes)
+│   └── CoffeeCard (one per coffee, repeated)
+└── AdminPortal (route: /admin)
+    ├── CoffeeForm (POST new coffee)
+    └── EditCoffeeForm (PATCH existing coffee, shown per item when "Edit" is clicked)
+State is lifted to App, which fetches the coffee list once with the useCoffee custom hook and passes coffees, addCoffee, and updateCoffee down as props.
 
-Currently, two official plugins are available:
+Setup
+Install dependencies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+npm install
+Start the mock backend (in one terminal):
 
-## React Compiler
+npm run server
+This runs json-server on http://localhost:3001, reading from db.json.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Start the React app (in a second terminal):
 
-## Expanding the ESLint configuration
+npm run dev
+Open the URL Vite prints (usually http://localhost:5173).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Routes
+/ - Home page
+/shop - Browse coffee, search by name, filter by origin
+/admin - Add new coffee (POST) and edit existing coffee (PATCH)
