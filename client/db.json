@@ -1,0 +1,68 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "Coffee R Us",
+      "description": "The go to store for your coffee needs",
+      "phone_number": "555-5555"
+    }
+  ],
+  "coffee": [
+    {
+      "id": 1,
+      "name": "Vanilla Bean",
+      "description": "Medium roast, nutty flavor",
+      "origin": "Colombia",
+      "price": 10.00
+    },
+    {
+      "id": 2,
+      "name": "House Blend",
+      "description": "Dark roast, rich flavor",
+      "origin": "Vietnam",
+      "price": 12.00
+    },
+    {
+      "id": 3,
+      "name": "Morning Sunrise",
+      "description": "Light roast, bright and fruity",
+      "origin": "Ethiopia",
+      "price": 11.50
+    },
+    {
+      "id": 4,
+      "name": "Mountain Mist",
+      "description": "Medium roast, smooth and mellow",
+      "origin": "Brazil",
+      "price": 9.50
+    },
+    {
+      "id": 5,
+      "name": "Dark Storm",
+      "description": "Extra dark roast, bold flavor",
+      "origin": "Vietnam",
+      "price": 13.00
+    },
+    {
+      "id": 6,
+      "name": "Golden Harvest",
+      "description": "Light roast, sweet and floral",
+      "origin": "Ethiopia",
+      "price": 12.50
+    },
+    {
+      "id": 7,
+      "name": "Cocoa Nib",
+      "description": "Medium roast, chocolatey finish",
+      "origin": "Colombia",
+      "price": 10.50
+    },
+    {
+      "id": 8,
+      "name": "Sunny Fields",
+      "description": "Medium roast, caramel notes",
+      "origin": "Brazil",
+      "price": 11.00
+    }
+  ]
+}
