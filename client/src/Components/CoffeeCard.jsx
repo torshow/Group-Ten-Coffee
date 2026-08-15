@@ -1,6 +1,8 @@
+import styles from './CoffeeCard.module.css'
+
 function coffeeCard({ coffee }) {
   return (
-    <div className="coffee-card">
+    <div className={styles.coffeecard}>
       <h3>{coffee.name}</h3>
       <p>{coffee.description}</p>
       <p>Origin: {coffee.origin}</p>

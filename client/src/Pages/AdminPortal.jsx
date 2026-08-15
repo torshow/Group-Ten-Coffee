@@ -1,22 +1,23 @@
 import { useState } from 'react'
 import CoffeeForm from './CoffeeForm'
 import EditCoffeeForm from './EditCoffeeForm'
+import styles from './AdminPortal.module.css'
 
 function AdminPortal({ coffees, addCoffee, updateCoffee }) {
   const [editingId, setEditingId] = useState(null)
 
   return (
-    <div className="admin-portal">
-      <div className="admin-panel">
+    <div className="styles.adminportal">
+      <div className="styles.adminpanel">
         <h2>Add a New Coffee</h2>
         <CoffeeForm addCoffee={addCoffee} />
       </div>
 
-      <div className="admin-panel">
+      <div className="styles.adminpanel">
         <h2>Manage Coffees</h2>
-        <ul className="admin-list">
+        <ul className="styles.adminlist">
           {coffees.map((coffee) => (
-            <li key={coffee.id} className="admin-list-item">
+            <li key={coffee.id} className="styles.adminlistitem">
               {editingId === coffee.id ? (
                 <EditCoffeeForm
                   coffee={coffee}
@@ -24,7 +25,7 @@ function AdminPortal({ coffees, addCoffee, updateCoffee }) {
                   onDone={() => setEditingId(null)}
                 />
               ) : (
-                <div className="admin-row">
+                <div className="styles.adminrow">
                   <span>
                     {coffee.name} - ${coffee.price.toFixed(2)}
                   </span>

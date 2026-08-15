@@ -1,0 +1,33 @@
+/* Shop.module.css */
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding: var(--space-6) var(--space-5);
+  max-width: 1120px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.searchInput {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-line);
+  background: var(--color-cream-50);
+  max-width: 320px;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--color-caramel-500);
+  box-shadow: 0 0 0 3px rgba(182, 116, 59, 0.18);
+}
+
+.coffeeList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
