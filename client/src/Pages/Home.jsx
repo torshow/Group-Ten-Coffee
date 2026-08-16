@@ -1,21 +1,19 @@
+  import coffeeImg from '../assets/cofee.jpeg';
+
 function Home() {
   return (
     <div className="home">
       <h1>Coffee group ten </h1>
       <p>The go to store for your coffee needs</p>
-      <p>We have a wide selection of coffee beans from around the world, as well as brewing equipment and accessories.</p>
+      <p>We have a wide selection of coffee beans from around the world, as well as</p>
       <p>Visit us today and taste the difference!</p>
       <p>Thank you for choosing our coffee shop!</p>
 
       <span className="home-image">
-        <img src="client/src/assets/cofee.jpeg" alt="Coffee" /> 
- 
- </span>
- </div>
-  )
+        <img src={coffeeImg} alt="Coffee" />
+      </span>
+    </div>
+  );
 }
 
 export default Home;
-
-
-
