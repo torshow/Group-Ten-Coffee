@@ -35,7 +35,7 @@ function CoffeeForm({ addCoffee }) {
   }
 
   return (
-    <form className="styles.coffeeform" onSubmit={handleSubmit}>
+    <form className="coffee-form" onSubmit={handleSubmit}>
       <label htmlFor={`${formId}-name`}>Coffee Name</label>
       <input
         id={`${formId}-name`}

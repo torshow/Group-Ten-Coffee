@@ -22,7 +22,7 @@ function EditCoffeeForm({ coffee, updateCoffee, onDone }) {
   }
 
   return (
-    <form className="coffeeform editform" onSubmit={handleSubmit}>
+    <form className="coffee-form edit-form" onSubmit={handleSubmit}>
       <label htmlFor={`${formId}-name`}>Coffee Name</label>
       <input
         id={`${formId}-name`}
@@ -60,7 +60,7 @@ function EditCoffeeForm({ coffee, updateCoffee, onDone }) {
         required
       />
 
-      <div className="editformbuttons">
+      <div className="edit-form-buttons">
         <button type="submit">Save</button>
         <button type="button" onClick={onDone}>
           Cancel

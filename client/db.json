@@ -13,56 +13,70 @@
       "name": "Vanilla Bean",
       "description": "Medium roast, nutty flavor",
       "origin": "Colombia",
-      "price": 10.00
+      "price": 10
     },
     {
       "id": 2,
       "name": "House Blend",
       "description": "Dark roast, rich flavor",
       "origin": "Vietnam",
-      "price": 12.00
+      "price": 12
     },
     {
       "id": 3,
       "name": "Morning Sunrise",
       "description": "Light roast, bright and fruity",
       "origin": "Ethiopia",
-      "price": 11.50
+      "price": 11.5
     },
     {
       "id": 4,
       "name": "Mountain Mist",
       "description": "Medium roast, smooth and mellow",
       "origin": "Brazil",
-      "price": 9.50
+      "price": 9.5
     },
     {
       "id": 5,
       "name": "Dark Storm",
       "description": "Extra dark roast, bold flavor",
       "origin": "Vietnam",
-      "price": 13.00
+      "price": 13
     },
     {
       "id": 6,
       "name": "Golden Harvest",
       "description": "Light roast, sweet and floral",
       "origin": "Ethiopia",
-      "price": 12.50
+      "price": 12.5
     },
     {
       "id": 7,
       "name": "Cocoa Nib",
       "description": "Medium roast, chocolatey finish",
       "origin": "Colombia",
-      "price": 10.50
+      "price": 10.5
     },
     {
       "id": 8,
       "name": "Sunny Fields",
       "description": "Medium roast, caramel notes",
       "origin": "Brazil",
-      "price": 11.00
+      "price": 11
+    },
+    {
+      "name": "bunga",
+      "description": "water",
+      "origin": "naks",
+      "price": 90,
+      "id": 9
+    },
+    {
+      "name": "java",
+      "description": "creammy",
+      "origin": "kenya",
+      "price": 1200,
+      "id": 10
     }
   ]
 }
