@@ -7,17 +7,17 @@ function AdminPortal({ coffees, addCoffee, updateCoffee }) {
   const [editingId, setEditingId] = useState(null)
 
   return (
-    <div className="styles.adminportal">
-      <div className="styles.adminpanel">
+    <div className="admin-portal">
+      <div className="admin-panel">
         <h2>Add a New Coffee</h2>
         <CoffeeForm addCoffee={addCoffee} />
       </div>
 
-      <div className="styles.adminpanel">
+      <div className="admin-panel">
         <h2>Manage Coffees</h2>
-        <ul className="styles.adminlist">
+        <ul className="admin-list">
           {coffees.map((coffee) => (
-            <li key={coffee.id} className="styles.adminlistitem">
+            <li key={coffee.id} className="admin-list-item">
               {editingId === coffee.id ? (
                 <EditCoffeeForm
                   coffee={coffee}
@@ -25,7 +25,7 @@ function AdminPortal({ coffees, addCoffee, updateCoffee }) {
                   onDone={() => setEditingId(null)}
                 />
               ) : (
-                <div className="styles.adminrow">
+                <div className="admin-row">
                   <span>
                     {coffee.name} - ${coffee.price.toFixed(2)}
                   </span>

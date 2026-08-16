@@ -1,6 +1,6 @@
-function coffeeCard({ coffee }) {
+function CoffeeCard({ coffee }) {
   return (
-    <div className={styles.coffeecard}>
+    <div className="coffee-card">
       <h3>{coffee.name}</h3>
       <p>{coffee.description}</p>
       <p>Origin: {coffee.origin}</p>
@@ -9,4 +9,4 @@ function coffeeCard({ coffee }) {
   )
 }
 
-export default coffeeCard;
+export default CoffeeCard;
