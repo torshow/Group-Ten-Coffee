@@ -6,7 +6,12 @@ function Home() {
       <p>We have a wide selection of coffee beans from around the world, as well as brewing equipment and accessories.</p>
       <p>Visit us today and taste the difference!</p>
       <p>Thank you for choosing our coffee shop!</p>
-    </div>
+
+      <span className="home-image">
+        <img src="client/src/assets/cofee.jpeg" alt="Coffee" /> 
+ 
+ </span>
+ </div>
   )
 }
 
