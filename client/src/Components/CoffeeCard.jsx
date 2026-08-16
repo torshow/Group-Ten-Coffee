@@ -1,6 +1,6 @@
 function CoffeeCard({ coffee }) {
   return (
-    <div className={coffee-card}>
+    <div className="coffee-card">
       <h3>{coffee.name}</h3>
       <p>{coffee.description}</p>
       <p>Origin: {coffee.origin}</p>
@@ -9,4 +9,4 @@ function CoffeeCard({ coffee }) {
   )
 }
 
-export default coffeeCard;
+export default CoffeeCard;
