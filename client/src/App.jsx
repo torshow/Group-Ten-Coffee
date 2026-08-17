@@ -3,7 +3,7 @@ import NavBar from './Components/NavBar.jsx'
 import Home from './Pages/Home'
 import Shop from './Pages/Shop.jsx'
 import AdminPortal from './Pages/AdminPortal.jsx'
-import useCoffee from './hooks/useCoffee.js' // Fixed capital 'C'
+import useCoffee from './hooks/useCoffee.js' 
 
 function App() {
   const { coffees, isLoading, error, addCoffee, updateCoffee } = useCoffee()
