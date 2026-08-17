@@ -125,6 +125,8 @@ body {
   box-shadow: 0 8px 20px rbga(0, 0, 0, 0.35);
   object-fit: cover;
 }
+
+
 /* Shop page */
 .shop {
   display: flex;
